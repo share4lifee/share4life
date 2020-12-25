@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Donation</title>
+  <link rel="stylesheet" href="styling.css">
+  <!-- <script src="donation.js"></script> -->
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo.jpeg" alt="" width="50" height="50">
+    <h4> SHARE4LIFE | <em>for the needy</em></h4>
+  </div>
+  <div id="navbar">
+    <a href="contact-us.html">Contact Us</a>
+    <a href="donationform.html">Donation Form</a>
+    <a href="DonationHTML.html">Fund Donation</a>
+    <a href="about-us.html">About Us</a>
+    <a href="main.html">Home</a>
+  </div>
+  <div>
+    <h1>Donation Form</h1>
+  </div>
+  <div class="do">
+    <form action="submit">
+      <div class="firstname"><label for="name">First Name : </label>
+        <input type="text">
+      </div>
+      <div class="lastname"><label for="name1">Last Name : </label>
+        <input type="text">
+      </div>
+      <div class="email"><label for="id">Email : </label>
+        <input  accept=""type="text">
+      </div >
+      <div class="categories">
+        <label  for="cate">Categories: </label><select class="type" name="">
+          <option  value="F">Food</option>
+          <option value="B">Books</option>
+          <option  value="E">Educutional Devices</option>
+          <option  value="S">Stationeries</option>
+        </select>
+      </div>
+      <div class="donate"><label for="email"><br>What do you want to donate?</label>
+        <input  type="text">
+      </div >
+    </form >
+    <div class="submitbutton" >
+      <button  onclick="submit()">Submit</button>
+    </div >
+  </div >
+
+  <script>
+    window.onscroll = function() {
+     myFunction()
+   };
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+
+   function myFunction() {
+     if (window.pageYOffset >= sticky) {
+       navbar.classList.add("sticky")
+     } else {
+       navbar.classList.remove("sticky");
+     }
+   }
+    function submit() {
+      alert("You have submitted the donation");
+    }
+  </script>
+</body>
+
+</html>

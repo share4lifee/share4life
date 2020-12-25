@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styling.css">
+  <script src="function.js" charset="utf-8"></script>
+  <title>Contact Us</title>
+  <!-- <style>
+    body {
+      margin: 0;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      background: black;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .header {
+      /* background-color: #CCD1D1; */
+      padding: 30px;
+      /* text-align: center; */
+    }
+
+    .header img {
+      float: left;
+    }
+
+    .header h4 {
+      font-family: serif;
+      padding-left: 5px;
+      display: inline;
+    }
+
+    #navbar {
+      border: 1px solid white;
+      border-left: 0px;
+      border-right: 0px;
+      width: 100%;
+      overflow: hidden;
+      background: black;
+      /* background-color: #263238; */
+    }
+
+    #navbar a {
+      float: right;
+      display: block;
+      color: #EF9A9A;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #E91E63;
+      color: white;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky+.content {
+      padding-top: 60px;
+    }
+
+    /* contact-us  */
+    .para {
+      font-size: 22px;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    /* Style the container/contact section */
+    .container-contact {
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .cont {
+      color: gold;
+    }
+
+    label {
+      color: cyan;
+    }
+
+    /* Create two columns that float next to eachother */
+    .column-contact {
+      width: 60%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+
+    .row-contact {
+      padding-left: 25%;
+    }
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+      .column-contact,
+      input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  </style> -->
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo.jpeg" alt="" width="50" height="50">
+    <h4> SHARE4LIFE | <em>for the needy</em></h4>
+  </div>
+  <div id="navbar">
+    <a href="contact-us.html">Contact Us</a>
+    <a href="donationform.html">Donation Form</a>
+    <a href="DonationHTML.html">Fund Donation</a>
+    <a href="about-us.html">About Us</a>
+    <a href="main.html">Home</a>
+  </div>
+  <div class="container-contact">
+    <div style="text-align:center">
+      <h2 class="cont">Contact Us</h2>
+      <p class="para">If you have any questions or feedbacks, please do fill in this form to contact us.</p>
+    </div>
+    <div class="row-contact">
+      <div class="column-contact">
+        <form action="#">
+          <label for="fname">First Name*</label>
+          <input type="text" id="fname" name="firstname" required placeholder="Your name..">
+          <label for="lname">Last Name*</label>
+          <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
+          <label for="lname">Email*</label>
+          <input type="email" id="email" name="email" required placeholder="Your email..">
+          <label for="subject">Type here</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <div style="text-align:center">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    };
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
