@@ -17,9 +17,7 @@ body {
 }
 
 .header {
-  /* background-color: #CCD1D1; */
   padding: 30px;
-  /* text-align: center; */
 }
 
 .header img {
@@ -39,7 +37,6 @@ body {
   width: 100%;
   overflow: hidden;
   background: black;
-  /* background-color: #263238; */
 }
 
 #navbar a {
@@ -67,7 +64,7 @@ body {
   padding-top: 60px;
 }
 
-/*****    HOMEPAGE   ******/
+/**    HOMEPAGE   ***/
 .home {
   padding: 30px;
   text-align: center;
@@ -95,7 +92,6 @@ body {
 }
 
 .intro {
-  /* background: #FAEBD7; */
   padding: 0px 30px 30px 30px;
 }
 
@@ -116,7 +112,6 @@ body {
 }
 
 .about-us {
-  /* background: cyan; */
   padding: 0px 30px 30px 30px;
 }
 
@@ -220,7 +215,7 @@ body {
   color: pink;
 }
 
-/*****    ABOUT-US   ******/
+/**    ABOUT-US   ***/
 .column {
   float: left;
   width: 33%;
@@ -278,7 +273,7 @@ body {
   }
 }
 
-/*****    CONTACT-US   ******/
+/**    CONTACT-US   ***/
 .para {
   font-size: 22px;
 }
@@ -316,7 +311,7 @@ input[type=submit]:hover {
   color: gold;
 }
 
-label {
+#label {
   color: cyan;
 }
 
@@ -340,59 +335,64 @@ label {
     margin-top: 0;
   }
 }
-/**    DONATION FORM   ***/
-h1{
+
+/*    DONATION FORM   **/
+h1 {
   text-align: center;
 }
 
-form{
+#form {
   border: 0px solid black;
   margin: 50px;
   padding: 50px 50px 50px 50px;
   background: #696969;
+  color: white;
 }
-.do .firstname input{
-  margin: 5px 5px 5px 0px;
-  width: 80%;
-}
-.do .lastname input{
+
+.do .firstname input {
   margin: 5px 5px 5px 0px;
   width: 80%;
 }
 
-.do .email input{
-    margin: 5px 5px 5px 65px;
-    width: 80%;
-  }
+.do .lastname input {
+  margin: 5px 5px 5px 0px;
+  width: 80%;
+}
 
-.do .donate input{
+.do .email input {
+  margin: 5px 5px 5px 65px;
+  width: 80%;
+}
+
+.do .donate input {
   margin: 5px 5px 5px 0px;
   width: 94%;
 }
 
-.categories .type{
+.categories .type {
   width: 80%;
   border-radius: 10px 10px 10px 10px;
   font-size: 20px;
   margin: 5px 10px 5px 5px;
 }
 
-.do .submitbutton{
+.do .submitbutton {
   text-align: center;
   margin-top: 10px;
 }
 
-.do .submitbutton button{
+.do .submitbutton button {
   background: #D39D10;
   padding: 10px;
 }
-/**    Fund Donation   ***/
+
+/*    Fund Donation   **/
 h1 {
   color: white;
   text-align: center;
 }
 
-th{
+th {
   background-color: gray;
 }
 
@@ -400,6 +400,7 @@ table, th, td {
   border: 0.5px solid gray;
   padding: 2px;
 }
+
 table {
   border-spacing: 1px;
 }
@@ -408,88 +409,19 @@ td.tab {
   text-align: center;
 }
 
-button{
+button {
   background-color: white
 }
 
-.button{
+.button {
   margin-top: 20px;
   text-align: center;
 }
 
-.answer{
+.answer {
   margin-top: 40px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
   background-color: gray;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  background: black;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-.header {
-  /* background-color: #CCD1D1; */
-  padding: 30px;
-  /* text-align: center; */
-}
-
-.header img {
-  float: left;
-}
-
-.header h4 {
-  font-family: serif;
-  padding-left: 5px;
-  display: inline;
-}
-
-#navbar {
-  border: 1px solid white;
-  border-left: 0px;
-  border-right: 0px;
-  width: 100%;
-  overflow: hidden;
-  background: black;
-  /* background-color: #263238; */
-}
-
-#navbar a {
-  float: right;
-  display: block;
-  color: #EF9A9A;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  background-color: #E91E63;
-  color: white;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky+.content {
-  padding-top: 60px;
 }
