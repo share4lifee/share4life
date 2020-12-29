@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fund Donation</title>
+  <link rel="stylesheet" href="styling.css">
+  <script src="function.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo.jpeg" alt="" width="50" height="50">
+    <h4> SHARE4LIFE | <em>for the needy</em></h4>
+  </div>
+  <div id="navbar">
+    <a href="contact-us.html">Contact Us</a>
+    <a href="donationform.html">Donation Form</a>
+    <a href="DonationHTML.html">Fund Donation</a>
+    <a href="about-us.html">About Us</a>
+    <a href="main.html">Home</a>
+  </div>
+
+  <h1>Donation</h1>
+
+  <td class="tab">Name &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp : <input type="text" id="un"></td>
+  <div>
+    <td class="tab">Email &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp : <input type="text" id="un"></td>
+    <div>
+      <td class="tab">Phone Number&nbsp: <input type="text" id="un"></td>
+
+      <p>Please enter the donation amount :</p>
+      <table style="width:100%">
+        <tr>
+          <th>Donation</th>
+          <th>Amount</th>
+        </tr>
+
+        <tr>
+          <td>Food</td>
+          <td class="tab">RM<input type="text" id="foodd"></td>
+        </tr>
+
+        <tr>
+          <td>Books</td>
+          <td class="tab">‎‎‎‏‏‎‎‏‏‎RM<input type="text" id="bookss"></td>
+        </tr>
+
+        <tr>
+          <td>Educational Devices</td>
+          <td class="tab">RM<input type="text" id="edd"></td>
+        </tr>
+
+        <tr>
+          <td>Stationeries</td>
+          <td class="tab">‎RM<input type="text" id="stationn"></td>
+        </tr>
+
+      </table>
+      <div class="button">
+        <button type="button" onclick="calc()">Calculate</button>
+      </div>
+
+      <div class="answer" id="result"></div>
+      <script>
+        window.onscroll = function() {
+          myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+</body>
+
+</html>
