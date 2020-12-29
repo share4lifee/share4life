@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Donation</title>
   <link rel="stylesheet" href="styling.css">
-  <!-- <script src="donation.js"></script> -->
 </head>
 
 <body>
@@ -27,7 +25,7 @@
     <h1>Donation Form</h1>
   </div>
   <div class="do">
-    <form action="submit">
+    <form id="form">
       <div class="firstname"><label for="name">First Name : </label>
         <input type="text">
       </div>
@@ -35,39 +33,40 @@
         <input type="text">
       </div>
       <div class="email"><label for="id">Email : </label>
-        <input  accept=""type="text">
-      </div >
+        <input accept="" type="text">
+      </div>
       <div class="categories">
-        <label  for="cate">Categories: </label><select class="type" name="">
-          <option  value="F">Food</option>
+        <label for="cate">Categories: </label><select class="type" name="">
+          <option value="F">Food</option>
           <option value="B">Books</option>
-          <option  value="E">Educutional Devices</option>
-          <option  value="S">Stationeries</option>
+          <option value="E">Educutional Devices</option>
+          <option value="S">Stationeries</option>
         </select>
       </div>
       <div class="donate"><label for="email"><br>What do you want to donate?</label>
-        <input  type="text">
-      </div >
-    </form >
-    <div class="submitbutton" >
-      <button  onclick="submit()">Submit</button>
-    </div >
-  </div >
+        <input type="text">
+      </div>
+    </form>
+    <div class="submitbutton">
+      <button onclick="submit()">Submit</button>
+    </div>
+  </div>
 
   <script>
     window.onscroll = function() {
-     myFunction()
-   };
-   var navbar = document.getElementById("navbar");
-   var sticky = navbar.offsetTop;
+      myFunction()
+    };
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
 
-   function myFunction() {
-     if (window.pageYOffset >= sticky) {
-       navbar.classList.add("sticky")
-     } else {
-       navbar.classList.remove("sticky");
-     }
-   }
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
     function submit() {
       alert("You have submitted the donation");
     }
